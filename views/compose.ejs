@@ -1,0 +1,13 @@
+<%- include("header.ejs") -%>
+<%- include("navbar.ejs") -%>
+<div class="compose-main container">
+    <h2 class="form-title">Compose your post</h2>
+    <form action="/compose" method="post" class="compose-form">
+        <div class="form-input">
+            <input type="text" class="post-title-input" placeholder="Enter the title" name="titleInput">
+            <textarea placeholder="Enter the content" name="contentInput" class="post-content-input"></textarea>
+            <input type="submit" value="Compose" style="float: right; padding: 5px 20px;">
+        </div>
+    </form>
+</div>
+<%- include("footer.ejs") -%>

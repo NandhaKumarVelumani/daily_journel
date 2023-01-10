@@ -1,0 +1,68 @@
+.container-fluid {
+  padding: 0px;
+}
+
+.navbar {
+  padding: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.post-content {
+  display: inline;
+  font-size: 2.1rem;
+}
+
+.post-title{
+  font-size: 4rem;
+}
+
+.form-title{
+    margin: 20px 0;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.post-title-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.post-title-input:focus, .post-content-input:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+    background-color: #FFF6BF;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
+}
+
+.footer p {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #fff;
+}
+

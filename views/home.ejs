@@ -1,0 +1,33 @@
+<%- include("header.ejs") -%>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="navbar-brand">DAILY JOURNAL</p>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- 6 -->
+      <li id="home"><a href="/">HOME</a></li>
+      <li id="about"><a href="/compose">COMPOSE POST</a></li>
+      <% if(user){ %>
+        <li id="logout"><a href="/logout">LOG OUT</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
+<div class="home-main container">
+  <h1>Hi <%= uname %></h1>
+  <div class="posts">
+    <% posts.forEach(post => { %>
+    <div class="post">
+      <h3 class="post-title-home"><%= post.postTitle %></h3>
+      <p class="post-content-home">
+        <% if(post.postContent.length > 150){ %> <%=
+        post.postContent.slice(0,180)+"..." %>
+        <a href="/posts/<%= post.id %>">read more</a>
+        <% } %>
+      </p>
+    </div>
+    <% }) %>
+  </div>
+</div>
+<%- include("footer.ejs") -%>
